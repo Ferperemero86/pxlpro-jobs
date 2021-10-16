@@ -1,20 +1,20 @@
-@import 'variables';
-@import 'normalize';
+@import "variables";
+@import "normalize";
 @font-face {
-  font-family: 'ProximaNova';
-  src: url('../fonts/ProximaNova-Regular.woff') format('woff');
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-Regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'ProximaNova';
+  font-family: "ProximaNova";
   font-weight: 500;
-  src: url('../fonts/ProximaNova-SemiBold.woff') format('woff');
+  src: url("../fonts/ProximaNova-SemiBold.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'ProximaNova';
+  font-family: "ProximaNova";
   font-weight: 700;
-  src: url('../fonts/ProximaNova-Bold.woff') format('woff');
+  src: url("../fonts/ProximaNova-Bold.woff") format("woff");
 }
 
 html {
@@ -43,7 +43,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'ProximaNova';
+  font-family: "ProximaNova";
 }
 
 .wrapper {
@@ -52,12 +52,12 @@ h6 {
   padding: 0 $page-padding;
 }
 
-@import 'grid';
-@import 'utilities';
+@import "grid";
+@import "utilities";
 
+@import "components/skip-link";
+@import "components/account-bar";
+@import "components/page-header";
+@import "components/hamburger";
 
-@import 'components/skip-link';
-@import 'components/account-bar';
-@import 'components/page-header';
-
-@import 'components/hero/hero-first';
+@import "components/hero/hero-first";
