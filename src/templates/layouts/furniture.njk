@@ -6,12 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/public/css/styles.css" />
     <script src="/public/js/script.js"></script>
-    {% block head %}{% endblock %}
   </head>
 
+  <!-- Body -->
   <body>
-    {% block bodyStart %}{% endblock %}
-
     <div class="container">
       <p class="skip-to-content">
         <a accesskey="S" title="Access key: S" href="#main">
@@ -23,14 +21,13 @@
       {% include 'includes/header.njk' %}
 
       <!-- Main content -->
-      {% block main %}
       <main role="main" class="main" id="main">
         <div class="wrapper">{% block content %}{% endblock %}</div>
       </main>
-      {% endblock %}
 
       <!-- Footer -->
-      {% include 'includes/footer.njk' %} {% block bodyEnd %}{% endblock %}
+      {% include 'includes/footer.njk' %}
     </div>
   </body>
+  <!-- End Body -->
 </html>

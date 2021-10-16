@@ -3,8 +3,20 @@
 <!-- Main content -->
 {% block content %}
 
-  <div class="hero--first grid--flex">
-    <img src="public/images/hero.png" class="hero--first__img" alt="A lady using a laptop in the office" />
+<div class="hero--first grid--flex">
+  <img
+    src="public/images/hero.png"
+    class="hero--first__img"
+    alt="A lady using a laptop in the office"
+  />
+
+  <div class="hero--first__content">
+    <h1 class="heading">{{ heroMessage }}</h1>
+    <p class="text">
+      Hundreds of new career opportunities each day. Find your perfect job.
+    </p>
   </div>
-  
+  {% include 'includes/search-form.njk' %}
+</div>
+
 {% endblock %}

@@ -1,0 +1,21 @@
+//// ALIGNMENT ////
+
+// Relative - absolute XY centering
+@mixin paddingY($val) {
+  padding-top: $val;
+  padding-bottom: $val;
+}
+
+@mixin paddingX($val) {
+  padding-left: $val;
+  padding-right: $val;
+}
+
+//// BORDERS ////
+
+// Border radius
+@mixin b-radius($size) {
+  -webkit-border-radius: $size;
+  -moz-border-radius: $size;
+  border-radius: $size;
+}
