@@ -1,19 +1,19 @@
-const Hapi = require('@hapi/hapi');
-const Inert = require('@hapi/inert');
-const Vision = require('@hapi/vision');
-const Path = require('path');
-const Blipp = require('blipp');
-const Nunjucks = require('nunjucks');
-const Routes = require('./lib/routes');
-const DataModel = require('./data/model');
+const Hapi = require("@hapi/hapi");
+const Inert = require("@hapi/inert");
+const Vision = require("@hapi/vision");
+const Path = require("path");
+const Blipp = require("blipp");
+const Nunjucks = require("nunjucks");
+const Routes = require("./lib/routes");
+const DataModel = require("./data/model");
 
 // Create a server with a host and port
 const server = new Hapi.Server({
-  host: 'localhost',
+  host: "localhost",
   port: 8000,
   routes: {
     files: {
-      relativeTo: Path.join(__dirname, '../public'),
+      relativeTo: Path.join(__dirname, "../public"),
     },
   },
 });
@@ -32,14 +32,17 @@ const start = async function () {
           };
         },
         prepare: (options, next) => {
-          options.compileOptions.environment = Nunjucks.configure(options.path, { watch: false });
+          options.compileOptions.environment = Nunjucks.configure(
+            options.path,
+            { watch: false }
+          );
           return next();
         },
       },
     },
     relativeTo: __dirname,
-    path: Path.join(__dirname, '../src/templates'),
-    isCached: process.env.NODE_ENV === 'production' ? true : false,
+    path: Path.join(__dirname, "../src/templates"),
+    isCached: process.env.NODE_ENV === "production" ? true : false,
     context: DataModel,
   });
 
@@ -52,7 +55,7 @@ const start = async function () {
     process.exit(1);
   }
 
-  console.log('Server running at:', server.info.uri);
+  console.log("Server running at:", server.info.uri);
 };
 
 start();

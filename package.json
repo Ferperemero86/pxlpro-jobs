@@ -12,10 +12,10 @@
   "author": "James Wragg <james.wragg@madgex.com> (https://madgex.com)",
   "license": "MIT",
   "dependencies": {
-    "blipp": "^4.0.1",
     "@hapi/hapi": "^19.2.0",
     "@hapi/inert": "^6.0.2",
     "@hapi/vision": "^6.0.1",
+    "blipp": "^4.0.1",
     "nunjucks": "^3.2.2"
   },
   "devDependencies": {
@@ -25,6 +25,7 @@
     "gulp-nodemon": "^2.5.0",
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "prettier": "2.4.1"
   }
 }

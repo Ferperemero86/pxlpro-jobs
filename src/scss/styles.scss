@@ -18,7 +18,7 @@
 }
 
 html {
-  font-size: 15px;
+  font-size: 0.9375rem;
 }
 
 body {
@@ -52,7 +52,12 @@ h6 {
   padding: 0 $page-padding;
 }
 
+@import 'grid';
 @import 'utilities';
+
+
 @import 'components/skip-link';
 @import 'components/account-bar';
 @import 'components/page-header';
+
+@import 'components/hero/hero-first';

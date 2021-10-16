@@ -1,28 +1,28 @@
 module.exports = [
   {
-    method: 'GET',
-    path: '/',
+    method: "GET",
+    path: "/",
     handler: function (request, h) {
-      return h.view('index', {
-        message: 'Hello world',
+      return h.view("pages/index.njk", {
+        message: "Hello world",
       });
     },
     options: {
-      description: 'Homepage',
+      description: "Homepage",
     },
   },
   {
-    method: 'GET',
-    path: '/public/{param*}',
+    method: "GET",
+    path: "/public/{param*}",
     handler: {
       directory: {
-        path: '.',
+        path: ".",
         redirectToSlash: true,
         index: true,
       },
     },
     options: {
-      description: 'Static assets',
+      description: "Static assets",
     },
   },
 ];
