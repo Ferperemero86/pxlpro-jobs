@@ -36,6 +36,12 @@
       margin: 10px 0 10px;
     }
   }
+
+  &__btn {
+    background-color: $color-brand;
+    color: $color-grey;
+    padding: 0.2rem 0.5rem;
+  }
 }
 
 .page-nav__item {

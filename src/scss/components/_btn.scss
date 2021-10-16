@@ -1,3 +1,8 @@
 .btn {
   @include b-radius(0.2rem);
+  border: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
