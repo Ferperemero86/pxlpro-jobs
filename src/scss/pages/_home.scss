@@ -2,13 +2,14 @@
 .search-form--Home .search-form {
   width: 100%;
   position: relative;
-  padding: 1.5rem 1rem;
+  @extend .padding-x;
+  @include paddingY(1.5rem);
   left: 0;
   background-color: $color-tuatara;
 
   &__first-section {
     .field {
-      width: 20rem;
+      width: 18rem;
 
       @media screen and (min-width: $breakpoint-medium) {
         margin-left: 2rem;
@@ -64,5 +65,79 @@
       opacity: 0.9;
       filter: blur(1px);
     }
+  }
+}
+
+// Job links
+.job-links {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .link {
+      &::after {
+        content: " >";
+      }
+    }
+  }
+
+  &__sector {
+    .jobs {
+      @media screen and (min-width: $breakpoint-x-small) {
+        display: flex;
+
+        .column {
+          &:not(:last-child) {
+            margin-right: 2rem;
+          }
+        }
+      }
+    }
+  }
+  .jobs-list {
+    padding: 0;
+
+    &__element {
+      &:not(:first-child) {
+        margin-top: 1rem;
+      }
+
+      .title {
+        color: $color-brand;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  &__featured {
+    .jobs-list__job {
+      margin-top: 1rem;
+
+      .img {
+        max-width: 50%;
+
+        @media screen and (min-width: $breakpoint-x-small) {
+          margin-right: 2rem;
+        }
+
+        @media screen and (min-width: $breakpoint-medium) {
+          max-width: 100%;
+        }
+      }
+      .description {
+        &__title {
+          color: $color-brand;
+        }
+      }
+
+      @media screen and (min-width: $breakpoint-x-small) {
+        display: flex;
+      }
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-medium) {
+    display: flex;
+    justify-content: space-between;
   }
 }
