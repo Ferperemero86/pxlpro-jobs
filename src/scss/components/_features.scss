@@ -1,0 +1,55 @@
+.features {
+  position: relative;
+  background-color: $color-white;
+
+  &__img {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  &__content {
+    color: $color-white;
+
+    .column {
+      width: 70%;
+      padding: 1rem 2rem;
+      margin: 1.5rem auto;
+      background-color: $color-tuatara;
+
+      &__subtitle {
+        color: $color-grey;
+      }
+
+      @media screen and (min-width: $breakpoint-medium) {
+        margin: 0 auto;
+        position: relative;
+        background: none;
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          background-color: $color-tuatara;
+          z-index: -1;
+          opacity: 0.8;
+          filter: blur(1px);
+        }
+      }
+    }
+
+    @media screen and (min-width: $breakpoint-medium) {
+      position: absolute;
+      transform: translateY(-50%);
+      top: 50%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+    }
+  }
+  @media screen and (min-width: $breakpoint-medium) {
+    background: none;
+  }
+}

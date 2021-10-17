@@ -2,8 +2,8 @@
 .search-form--Home .search-form {
   width: 100%;
   position: relative;
-  @extend .padding-x;
   @include paddingY(1.5rem);
+  //@include paddingX(1rem);
   left: 0;
   background-color: $color-tuatara;
 
@@ -43,13 +43,17 @@
     border: 0;
     height: 2rem;
     font-size: 0.8rem;
+
+    @media screen and (min-width: $breakpoint-medium) {
+      margin-top: 0;
+    }
   }
 
   @media screen and (min-width: $breakpoint-medium) {
     display: flex;
     align-items: center;
     justify-content: center;
-    bottom: 6rem;
+    bottom: 5rem;
     background: none;
     z-index: 3;
 
@@ -111,7 +115,7 @@
 
   &__featured {
     .jobs-list__job {
-      margin-top: 1rem;
+      margin-top: 2rem;
 
       .img {
         max-width: 50%;
@@ -119,14 +123,17 @@
         @media screen and (min-width: $breakpoint-x-small) {
           margin-right: 2rem;
         }
-
-        @media screen and (min-width: $breakpoint-medium) {
-          max-width: 100%;
-        }
       }
       .description {
         &__title {
+          line-height: 0;
           color: $color-brand;
+        }
+        &__location {
+          margin-top: 2rem;
+        }
+        &__salary {
+          line-height: 0;
         }
       }
 

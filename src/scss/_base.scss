@@ -50,7 +50,7 @@ h6 {
 }
 
 h1 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 
   @media screen and (min-width: $breakpoint-medium) {
     font-size: 2.5rem;
@@ -58,7 +58,11 @@ h1 {
 }
 
 h2 {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
+
+  @media screen and (min-width: $breakpoint-medium) {
+    font-size: 2rem;
+  }
 }
 
 .wrapper {
@@ -72,9 +76,13 @@ h2 {
 
 .padding-x {
   @include paddingX($page-padding * 2);
+
+  @media screen and (min-width: $breakpoint-medium) {
+    @include paddingX($page-padding * 5);
+  }
 }
 
 .margin-y {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }

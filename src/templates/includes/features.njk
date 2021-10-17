@@ -1,0 +1,12 @@
+<div class="features">
+  <img src="public/images/_ctas/cta-bg.png" class="features__img" />
+  <div class="features__content padding-x">
+    {% for cta in ctas%}
+    <div class="column">
+      <img src="public/images/_ctas/{{ cta.icon }}" class="column__img" />
+      <h3 class="column__title">{{ cta.title }}</h3>
+      <p class="column__subtitle">{{ cta.subtitle }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>

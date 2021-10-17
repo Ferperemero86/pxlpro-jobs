@@ -29,18 +29,18 @@ module.exports = {
   heroMessage: "Search 1,570 jobs.",
   ctas: [
     {
-      icon: "job-alerts",
+      icon: "icon_email.svg",
       title: "Get instant job alerts",
       subtitle: "Personalised job recommendations sent straight to your email.",
     },
     {
-      icon: "create-account",
+      icon: "icon_profile.svg",
       title: "Create an account for free",
       subtitle:
         "Shortlist jobs, manage your job alerts and receive special offers.",
     },
     {
-      icon: "upload-resume",
+      icon: "icon_upload.svg",
       title: "Upload your resume",
       subtitle:
         "Upload your resume so our employers can match your details to the best jobs.",
