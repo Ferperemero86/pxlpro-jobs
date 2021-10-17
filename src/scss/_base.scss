@@ -58,10 +58,13 @@ h2 {
 
 .wrapper {
   margin: 0 auto;
-  max-width: 1180px + ($page-padding * 2);
-  padding: 0 $page-padding;
+  //max-width: 1180px;
 }
 
 .main {
   background-color: $color-grey;
+}
+
+.padding-x {
+  @include paddingX($page-padding * 2);
 }

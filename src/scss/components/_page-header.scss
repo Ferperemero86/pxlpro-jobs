@@ -2,7 +2,7 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 24px 0;
+  @include paddingY(1.5rem);
   position: relative;
 
   @media screen and (max-width: $breakpoint-small) {
@@ -48,6 +48,7 @@
   display: inline-block;
   font-family: "ProximaNova";
   font-weight: 500;
+  font-size: 0.9375rem;
   margin-left: 30px;
 
   @media screen and (max-width: 895px) {
