@@ -1,7 +1,4 @@
-{% extends 'layouts/furniture.njk' %}
-
-<!-- Main content -->
-{% block content %}
+{% extends 'layouts/furniture.njk' %} {% block content %}
 
 <div class="hero--first grid--flex">
   <img
@@ -51,7 +48,7 @@
       </div>
     </div>
   </div>
-  <div class="job-links__featured">
+  <div class="job-links__featured padding-y">
     <div class="header">
       <h3 class="heading">Featured jobs</h3>
       <a class="link" href="#">View all</a>
@@ -72,4 +69,7 @@
 </div>
 
 <!--Features-->
-<div class="margin-y">{% include "includes/features.njk" %} {% endblock %}</div>
+{% include "includes/features.njk" %}
+
+<!--Featured Employers-->
+{%include "includes/featured-employers.njk" %} {%endblock %}

@@ -82,4 +82,12 @@ module.exports = {
       salary: "Up to $100,000",
     },
   ],
+  featuredEmployers: [
+    { img: "citi.png" },
+    { img: "agstar.png" },
+    { img: "ford.png" },
+    { img: "ioxus.png" },
+    { img: "nike.png" },
+    { img: "oracle.png" },
+  ],
 };

@@ -1,0 +1,21 @@
+.featured-employers {
+  background-color: $color-white;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__content {
+    .img {
+      margin-top: 2rem;
+      max-width: 100%;
+      border: 1px solid $color-grey;
+    }
+
+    @media screen and (max-width: $breakpoint-small) {
+      text-align: center;
+    }
+  }
+}

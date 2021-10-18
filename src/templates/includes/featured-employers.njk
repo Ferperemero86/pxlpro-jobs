@@ -1,0 +1,11 @@
+<div class="featured-employers padding-y padding-x">
+  <div class="featured-employers__header">
+    <h3 class="heading">Featured employers</h3>
+    <a class="link">View all employers ></a>
+  </div>
+  <div class="featured-employers__content">
+    {% for employer in featuredEmployers %}
+    <img src="public/images/_employers/{{ employer.img }}" class="img" />
+    {% endfor %}
+  </div>
+</div>

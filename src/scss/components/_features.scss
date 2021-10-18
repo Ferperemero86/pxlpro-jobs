@@ -1,6 +1,7 @@
 .features {
   position: relative;
   background-color: $color-white;
+  margin-bottom: 0;
 
   &__img {
     width: 100%;
@@ -9,6 +10,7 @@
 
   &__content {
     color: $color-white;
+    padding-bottom: 2rem;
 
     .column {
       width: 70%;

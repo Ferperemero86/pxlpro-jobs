@@ -1,9 +1,8 @@
 // Search form
 .search-form--Home .search-form {
-  width: 100%;
+  max-width: 100%;
   position: relative;
   @include paddingY(1.5rem);
-  //@include paddingX(1rem);
   left: 0;
   background-color: $color-tuatara;
 
