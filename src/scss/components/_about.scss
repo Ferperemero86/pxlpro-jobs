@@ -32,6 +32,7 @@
     position: relative;
     z-index: 2;
     grid-area: new-app;
+    padding-right: 0;
 
     &::before {
       content: "";

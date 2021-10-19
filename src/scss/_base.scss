@@ -32,7 +32,6 @@ body {
   line-height: 1.5;
   margin: 0 auto;
   overflow-x: hidden;
-  //max-width: 1900px;
 }
 
 a {
@@ -40,6 +39,7 @@ a {
   text-decoration: none;
   &:hover {
     text-decoration: underline;
+    cursor: pointer;
   }
 }
 

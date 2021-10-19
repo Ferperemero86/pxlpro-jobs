@@ -1,0 +1,57 @@
+.footer {
+  color: $color-grey;
+  background-color: $color-tundora;
+
+  &__menu-links {
+    @include paddingY(2rem);
+
+    .menu-links__list {
+      display: flex;
+      justify-content: space-evenly;
+
+      @media screen and (min-width: $breakpoint-small) {
+        justify-content: unset;
+      }
+
+      .column {
+        @media screen and (min-width: $breakpoint-small) {
+          display: flex;
+          justify-content: space-between;
+          margin-right: 2rem;
+        }
+      }
+
+      .element {
+        display: block;
+        color: $color-grey;
+
+        &:not(:last-child) {
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+
+  .limiter {
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+
+  &__social-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include paddingY(2rem);
+
+    .element img {
+      width: 1.4rem;
+    }
+
+    .links .element {
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
