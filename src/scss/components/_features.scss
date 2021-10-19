@@ -2,15 +2,21 @@
   position: relative;
   background-color: $color-white;
   margin-bottom: 0;
+  line-height: 0;
 
   &__img {
     width: 100%;
     margin-bottom: 1.5rem;
+
+    @media screen and (min-width: $breakpoint-medium) {
+      margin-bottom: 0;
+    }
   }
 
   &__content {
     color: $color-white;
     padding-bottom: 2rem;
+    line-height: 1.5;
 
     .column {
       width: 70%;
@@ -51,6 +57,7 @@
       text-align: center;
     }
   }
+
   @media screen and (min-width: $breakpoint-medium) {
     background: none;
   }

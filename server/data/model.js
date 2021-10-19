@@ -90,4 +90,29 @@ module.exports = {
     { img: "nike.png" },
     { img: "oracle.png" },
   ],
+  blogArticles: [
+    {
+      img: "article1.png",
+      title: "An introduction and the mobile revolution",
+      subtitle:
+        "There are many ways to market a product or a service and providing the potential clients and customers with testimonials is one of the best",
+    },
+    {
+      img: "article2.png",
+      title: "The pros and cons of taking a digital detox in the modern age",
+    },
+    {
+      img: "article3.png",
+      title: "Why should your company value user experience research?",
+    },
+    {
+      img: "article4.png",
+      title:
+        "We're in the age of big data. But it's what you do with it what matters",
+    },
+    {
+      img: "article5.png",
+      title: "INdustry focus: A look inside Invision's studio in California",
+    },
+  ],
 };

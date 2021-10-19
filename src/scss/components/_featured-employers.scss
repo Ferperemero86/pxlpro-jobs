@@ -17,5 +17,13 @@
     @media screen and (max-width: $breakpoint-small) {
       text-align: center;
     }
+    @media screen and (min-width: $breakpoint-small) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 1rem;
+    }
+    @media screen and (min-width: $breakpoint-medium) {
+      grid-template-columns: repeat(6, 1fr);
+    }
   }
 }

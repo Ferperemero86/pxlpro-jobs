@@ -92,6 +92,10 @@
         .column {
           &:not(:last-child) {
             margin-right: 2rem;
+
+            @media screen and (min-width: $breakpoint-large) {
+              margin-right: 15rem;
+            }
           }
         }
       }
@@ -139,6 +143,11 @@
       @media screen and (min-width: $breakpoint-x-small) {
         display: flex;
       }
+    }
+
+    @media screen and (min-width: $breakpoint-medium) {
+      padding-top: 0;
+      padding-left: 5rem;
     }
   }
 
