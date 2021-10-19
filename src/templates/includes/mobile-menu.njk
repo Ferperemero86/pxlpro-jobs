@@ -1,0 +1,6 @@
+<div class="mobile-menu hidden">
+  <span class="close-icon"></span>
+  {% for item in navItems%}
+  <a href="{{ item.href }}" class="mobile-menu__link">{{ item.label }}</a>
+  {% endfor %}
+</div>
