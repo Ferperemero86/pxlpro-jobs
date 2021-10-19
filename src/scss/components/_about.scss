@@ -1,0 +1,75 @@
+.about {
+  background-color: $color-white;
+  width: 100%;
+  @include paddingY(2rem);
+
+  .heading {
+    margin-top: 0;
+  }
+
+  .container {
+    width: 70%;
+    height: auto;
+    padding: 1rem;
+    margin: 3rem auto;
+    background-color: $color-grey;
+
+    @media screen and (min-width: $breakpoint-large) {
+      width: 23.5rem;
+    }
+  }
+
+  .about-us {
+    grid-area: about;
+
+    .text {
+      color: $color-grey;
+    }
+  }
+
+  .new-app {
+    display: flex;
+    position: relative;
+    z-index: 2;
+    grid-area: new-app;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $color-brand;
+      z-index: -1;
+      opacity: 0.1;
+    }
+  }
+
+  .campaigns {
+    grid-area: campaigns;
+
+    &__list {
+      padding-left: 1rem;
+      list-style: circle;
+      color: $color-brand;
+
+      .element {
+        &:not(:first-child) {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-medium) {
+    display: grid;
+    grid-template-areas:
+      "about about"
+      "new-app campaigns";
+  }
+
+  @media screen and (min-width: $breakpoint-large) {
+    display: flex;
+  }
+}
