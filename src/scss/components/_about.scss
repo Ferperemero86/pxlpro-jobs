@@ -34,6 +34,12 @@
     grid-area: new-app;
     padding-right: 0;
 
+    .img {
+      max-width: 15rem;
+      position: absolute;
+      left: -2rem;
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -52,7 +58,7 @@
 
     &__list {
       padding-left: 1rem;
-      list-style: circle;
+      list-style: disc;
       color: $color-brand;
 
       .element {

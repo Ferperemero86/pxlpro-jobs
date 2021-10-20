@@ -115,4 +115,11 @@ module.exports = {
       title: "INdustry focus: A look inside Invision's studio in California",
     },
   ],
+  featuredCampaigns: [
+    { title: "Jobs in the United States" },
+    { title: "Management jobs in New York" },
+    { title: "Graduate Jobs" },
+    { title: "Engeneering jobs in Chicago" },
+    { title: "Jobs in California" },
+  ],
 };

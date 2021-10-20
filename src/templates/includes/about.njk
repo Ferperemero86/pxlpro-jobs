@@ -16,17 +16,18 @@
         Easily manage your job search on the go with our iPhone app. Instant job
         notifications. Search, shortlist and apply.
       </p>
+      <img src="public/images/app-store-icon.png" class="img" />
     </div>
     <img src="public/images/mobile-app.png" class="new-app__img" />
   </div>
   <div class="campaigns container">
     <h3 class="heading campaigns__heading">Featured campaigns</h3>
     <ul class="campaigns__list">
-      <li class="element">Jobs in the United States</li>
-      <li class="element">Management jobs in New York</li>
-      <li class="element">Graduate Jobs</li>
-      <li class="element">Engeneering jobs in Chicago</li>
-      <li class="element">Jobs in California</li>
+      {% for item in featuredCampaigns %}
+      <li class="element">
+        <a href="#">{{ item.title }}</a>
+      </li>
+      {% endfor %}
     </ul>
     <a class="campaigns__link">View more ></a>
   </div>
