@@ -10,5 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   closeEl.addEventListener("click", function (e) {
     menuEl.classList.add("hidden");
+    hamburgerEl.classList.remove("hidden");
   });
 });

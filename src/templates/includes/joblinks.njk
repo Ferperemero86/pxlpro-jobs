@@ -1,0 +1,52 @@
+<div class="job-links padding-x margin-y">
+  <div class="job-links__sector">
+    <div class="header">
+      <h3 class="heading">Browse jobs by sector</h3>
+      <a class="link" href="#">View all</a>
+    </div>
+    <div class="jobs">
+      <div class="column">
+        <ul class="jobs-list">
+          {% for jobSector in jobSectors %} {% if (loop.index <= 8) %}
+          <li class="jobs-list__element">
+            <a href="#">
+              <span class="title">{{ jobSector.title }}</span>
+            </a>
+            <span class="quantity">{{ jobSector.quantity }}</span>
+          </li>
+          {% endif %} {% endfor %}
+        </ul>
+      </div>
+      <div class="column">
+        <ul class="jobs-list">
+          {% for jobSector in jobSectors %} {% if (loop.index >= 7) %}
+          <li class="jobs-list__element">
+            <a href="#">
+              <span class="title">{{ jobSector.title }}</span>
+            </a>
+            <span class="quantity">{{ jobSector.quantity }}</span>
+          </li>
+          {% endif %} {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="job-links__featured padding-y">
+    <div class="header">
+      <h3 class="heading">Featured jobs</h3>
+      <a class="link" href="#">View all</a>
+    </div>
+    <div class="jobs-list">
+      {% for job in featuredJobs %}
+      <div class="jobs-list__job">
+        <img src="public/images/_jobs/{{ job.img }}" class="img" />
+        <div class="description">
+          <a class="description__title">{{ job.title }}</a>
+          <p class="description__location">{{ job.location }}</p>
+          <p class="description__salary">{{ job.salary }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

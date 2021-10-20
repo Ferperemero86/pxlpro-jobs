@@ -3,7 +3,6 @@
     display: inline-block;
     padding: 0.1875rem;
     width: 1.8125rem;
-    --animationSpeed: 0.25s;
   }
 }
 
@@ -12,14 +11,6 @@
   flex-direction: column;
   justify-content: space-between;
   height: 1.25rem;
-
-  .bar1 {
-    animation: crossBar1-backward var(--animationSpeed) ease 0s 1 forwards;
-  }
-
-  .bar2 {
-    animation: slideInLeft var(--animationSpeed) ease 0s 1 forwards;
-  }
 }
 
 .bars-container,
@@ -113,42 +104,6 @@
   to {
     transform: translateX(0);
     opacity: 1;
-  }
-}
-
-@keyframes crossBar1 {
-  from {
-    transform: rotate(0def) translate(0, 0);
-  }
-  to {
-    transform: rotate(40deg) translate(-1px, 0);
-  }
-}
-
-@keyframes crossBar1-backward {
-  from {
-    transform: rotate(40deg) translate(-1px, 0);
-  }
-  to {
-    transform: rotate(0deg) translate(0, 0);
-  }
-}
-
-@keyframes crossBar2 {
-  from {
-    transform: rotate(0def) translate(0, 0);
-  }
-  to {
-    transform: rotate(-40deg) translate(-1px, 0);
-  }
-}
-
-@keyframes crossBar2-backward {
-  from {
-    transform: rotate(-40deg) translate(-1px, 0);
-  }
-  to {
-    transform: rotate(0deg) translate(0, 0);
   }
 }
 
