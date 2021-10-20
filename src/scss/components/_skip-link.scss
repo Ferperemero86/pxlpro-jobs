@@ -2,7 +2,7 @@
   left: 0;
   margin: 0;
   position: absolute;
-  top: 0
+  top: 0;
 }
 
 .skip-to-content a {
@@ -15,10 +15,10 @@
   position: absolute;
   text-align: center;
   width: 10em;
-  border-radius: 3px
+  border-radius: 3px;
 }
 
 .skip-to-content a:focus {
   left: 0;
-  z-index: 1000
+  z-index: 1000;
 }

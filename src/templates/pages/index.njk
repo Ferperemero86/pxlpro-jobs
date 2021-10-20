@@ -1,17 +1,11 @@
 {% extends 'layouts/furniture.njk' %} {% block content %}
 
 <div class="hero--first grid--flex">
-  <img
-    src="public/images/hero.png"
-    class="hero--first__img"
-    alt="A lady using a laptop in the office"
-  />
+  <img src="public/images/hero.png" class="hero--first__img" alt="A lady using a laptop in the office" />
 
   <div class="hero--first__content">
     <h1 class="heading">{{ heroMessage }}</h1>
-    <p class="text">
-      Hundreds of new career opportunities each day. Find your perfect job.
-    </p>
+    <p class="text">Hundreds of new career opportunities each day. Find your perfect job.</p>
   </div>
 </div>
 
@@ -19,19 +13,19 @@
 {% include 'includes/search-form.njk' %}
 
 <!-- Job links -->
-{% include 'includes/joblinks.njk' %}
+<section id="job-links">{% include 'includes/joblinks.njk' %}</section>
 
 <!-- Features -->
-{% include 'includes/features.njk' %}
+<section id="features">{% include 'includes/features.njk' %}</section>
 
 <!-- Featured Employers -->
-{%include 'includes/featured-employers.njk' %}
+<section id="featured-employers">{%include 'includes/featured-employers.njk' %}</section>
 
 <!-- Careers Advice -->
-{%include 'includes/careers-advice.njk' %}
+<section id="careers-advice">{%include 'includes/careers-advice.njk' %}</section>
 
 <!-- About -->
-{% include 'includes/about.njk' %}
+<section id="about">{% include 'includes/about.njk' %}</section>
 
 <!-- End block -->
 {% endblock %}

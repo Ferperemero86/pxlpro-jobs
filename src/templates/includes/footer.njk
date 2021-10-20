@@ -19,18 +19,11 @@
   <div class="footer__social-links">
     <p class="copyright">&#169; 2016. Powered by Madgex</p>
     <div class="links">
-      <a class="element" href="#">
-        <img src="public/images/_social/Facebook.svg" />
+      {% for item in socialLinks %}
+      <a class="element" href="{{ item.href }}">
+        <img src="public/images/_social/{{ item.img }}" alt="{{ item.description }}" />
       </a>
-      <a class="element" href="#">
-        <img src="public/images/_social/Twitter.svg" />
-      </a>
-      <a class="element" href="#">
-        <img src="public/images/_social/GooglePlus.svg" />
-      </a>
-      <a class="element" href="#">
-        <img src="public/images/_social/LinkedIn.svg" />
-      </a>
+      {% endfor %}
     </div>
   </div>
 </footer>

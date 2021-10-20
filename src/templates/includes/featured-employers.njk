@@ -5,7 +5,7 @@
   </div>
   <div class="featured-employers__content">
     {% for employer in featuredEmployers %}
-    <img src="public/images/_employers/{{ employer.img }}" class="img" />
+    <img src="public/images/_employers/{{ employer.img }}" class="img" alt="{{ employer.description }}" />
     {% endfor %}
   </div>
 </div>

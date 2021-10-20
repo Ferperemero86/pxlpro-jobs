@@ -41,7 +41,7 @@
     }
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       left: 0;
@@ -72,8 +72,8 @@
   @media screen and (min-width: $breakpoint-medium) {
     display: grid;
     grid-template-areas:
-      "about about"
-      "new-app campaigns";
+      'about about'
+      'new-app campaigns';
   }
 
   @media screen and (min-width: $breakpoint-large) {

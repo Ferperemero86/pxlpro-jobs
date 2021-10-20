@@ -39,7 +39,7 @@
     <div class="jobs-list">
       {% for job in featuredJobs %}
       <div class="jobs-list__job">
-        <img src="public/images/_jobs/{{ job.img }}" class="img" />
+        <img src="public/images/_jobs/{{ job.img }}" class="img" alt="{{ job.description }}" />
         <div class="description">
           <a class="description__title">{{ job.title }}</a>
           <p class="description__location">{{ job.location }}</p>
