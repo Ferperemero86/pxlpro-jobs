@@ -1,4 +1,5 @@
 .footer {
+  position: relative;
   color: $color-grey;
   background-color: $color-tundora;
 
@@ -14,18 +15,27 @@
       }
 
       .column {
+        .element {
+          display: block;
+          color: $color-grey;
+          font-size: 0.9rem;
+
+          &:not(:first-child) {
+            margin-top: 1rem;
+
+            @media screen and (min-width: $breakpoint-small) {
+              margin-top: 0;
+            }
+          }
+
+          &:not(:last-child) {
+            margin-right: 2rem;
+          }
+        }
+
         @media screen and (min-width: $breakpoint-small) {
           display: flex;
           justify-content: space-between;
-          margin-right: 2rem;
-        }
-      }
-
-      .element {
-        display: block;
-        color: $color-grey;
-
-        &:not(:last-child) {
           margin-right: 2rem;
         }
       }
@@ -44,8 +54,8 @@
     align-items: center;
     @include paddingY(2rem);
 
-    .element img {
-      width: 1.4rem;
+    .copyright {
+      font-size: 0.7rem;
     }
 
     .links .element {

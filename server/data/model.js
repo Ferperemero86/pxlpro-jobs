@@ -117,7 +117,7 @@ module.exports = {
     {
       img: 'article5.png',
       description: 'A lady working in her laptop',
-      title: "INdustry focus: A look inside Invision's studio in California",
+      title: "Industry focus: A look inside Invision's studio in California",
     },
   ],
   featuredCampaigns: [

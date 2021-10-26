@@ -34,10 +34,16 @@
     grid-area: new-app;
     padding-right: 0;
 
-    .img {
-      max-width: 15rem;
-      position: absolute;
-      left: -2rem;
+    &__content {
+      .img {
+        max-width: 10rem;
+
+        @media screen and (min-width: $breakpoint-small) {
+          max-width: 15rem;
+          position: absolute;
+          left: -2rem;
+        }
+      }
     }
 
     &::before {
